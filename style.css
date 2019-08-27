@@ -21,6 +21,16 @@ article {
     justify-content: flex-end;
     grid-column: 3/4;
     grid-row: 2/3;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    text-align: end;
+    padding-right: 10%;
+    
+}
+
+span {
+    font-size: 30px;
+    color: darkseagreen;
 }
 
 nav {
@@ -38,27 +48,6 @@ nav {
     grid-row: 3/4;
 }
 
-@media (max-width: 500px) {
-    nav {
-      justify-content: center;
-      flex-direction: column;
-      grid-column: 1/2;
-    }
-    .imgcontainer {
-      justify-content: center;
-      flex-direction: row;
-      grid-column: 1/2;
-    }
-    article {
-        justify-content: center;
-        flex-direction: row;
-        grid-column: 1/2;
-    }
-    .inline {
-    inline-size: min-content;
-    padding-right: 20px;
-    }
-}
 
 .inline {
 
@@ -87,4 +76,32 @@ nav {
     width: 100%;
     max-width: 200px;
     min-width: 50px;
+}
+
+@media (max-width: 500px) {
+    nav {
+      justify-content: center;
+      flex-direction: column;
+      grid-column: 1/2;
+      padding-inline-start: 10px;
+    
+    }
+    .imgcontainer {
+      justify-content: center;
+      flex-direction: row;
+      grid-column: 1/2;
+    }
+    article {
+        justify-content: center;
+        flex-direction: row;
+        grid-column: 1/2;
+    }
+    .inline {
+    inline-size: min-content;
+    padding-right: 20px;
+    }
+    article {
+        text-align: center;
+        
+    }
 }
