@@ -24,7 +24,6 @@ article {
     grid-row: 2/3;
     font-family: 'Playfair Display', serif;
     font-size: 20px;
-    text-align: end;
     padding-right: 10%;
     
 }
@@ -34,11 +33,18 @@ span {
     color: darkseagreen;
 }
 
-nav {
+.logo-container {
     display: flex;
     justify-content: flex-end;
     grid-column: 3/4;
     grid-row: 1/2;
+}
+
+nav {
+    font-size: 20px;
+    color: darkseagreen;
+    grid-column: 3/4;
+    grid-row: 2/3;
 }
 
 .imgcontainer {
@@ -51,7 +57,6 @@ nav {
 
 
 .inline {
-
     object-fit: contain;
     padding-left: 50px;
     padding-right: 0;
