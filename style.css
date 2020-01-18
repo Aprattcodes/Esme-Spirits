@@ -3,9 +3,8 @@ html {
   }
 
 body {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows:  repeat(4, auto);
+    display: flex;
+    flex-direction: column;
     /*overflow-x: hidden; /* Hide horizontal scrollbar */
     
 }
@@ -27,22 +26,16 @@ body {
     padding-top: 10px;    
 }
           
-.p-container {
-    grid-row: 2;
-   grid-column: 1;
-   margin: auto;
-   margin-top: 25%;    
-}
 
 article {   
     font-family: 'Playfair Display', serif;
-    font-size: 50px;
+    font-size: 1vw;
     text-align: center;
     
 }
 
 span {
-    font-size: 80px;
+    font-size: 2vw;
     color: darkseagreen;
 }
 
@@ -51,13 +44,13 @@ span {
 .imgcontainer {
     display: flex;
     align-items: baseline;
-    padding-right: 10px;
+    
 }
 
 section {
-    grid-row: 2;
-    grid-column: 2/4;
-    margin: auto;
+    align-self: flex-end;
+    margin: 20%;
+    margin-right: 0;
 }
 
 .inline {
@@ -106,8 +99,7 @@ section {
 .iconify {
     width: 60px;
     height: 100%;
-    grid-column: 1;
-    grid-row: 2;
+    align-self: flex-end;
     position: fixed;
-    padding-left: 10px;
+    
 } 
