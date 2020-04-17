@@ -19,10 +19,23 @@ function scrollFunction() {
   })
 };
 
-var colors = ['#fb5714', '#00ff00', '#0000ff'];
-var random_color = colors[Math.floor(Math.random() * colors.length)];
-document.getElementById('rectangle').style.color = random_color;
-
 function myFunction(x) {
   x.classList.toggle("change");
+}
+
+function openNav() {
+  document.getElementById("menu").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("menu").style.width = "0";
+}
+
+function toggleNav() {
+  var element = document.getElementById("menu");
+  if (element.style.width == "250px") {
+      element.style.width = "0px";
+  } else {
+      element.style.width = "250px";
+  }
 }

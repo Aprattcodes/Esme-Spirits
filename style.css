@@ -9,6 +9,10 @@ body {
     
 }
 
+.main {
+    position: absolute;
+}
+
 .logo {
     top: 0;
     left: 0;
@@ -26,7 +30,7 @@ body {
   .bar1, .bar2, .bar3 {
     width: 5px;
     height: 5px;
-    background-color: #008ccc;
+    background-color: #0080ff;
     margin: 6px 0;
     transition: 0.4s;
     border-radius: 50%;
@@ -43,6 +47,31 @@ body {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
   }
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: relative;
+  background-color: #cfe3cf;
+  z-index: 1;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 50px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
   
 article {   
     font-family: 'Playfair Display', serif;
