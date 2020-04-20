@@ -5,7 +5,7 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    /*overflow-x: hidden; /* Hide horizontal scrollbar */
+    /*overflow-y: hidden; /* Hide horizontal scrollbar */
     
 }
 
@@ -25,6 +25,7 @@ body {
 .container {
     display: inline-block;
     cursor: pointer;
+    margin-left: 10%;
   }
   
   .bar1, .bar2, .bar3 {
@@ -50,11 +51,11 @@ body {
 
 .sidebar {
   height: 100%;
-  width: 250px;
+  width: 500px;
   position: relative;
   background-color: #cfe3cf;
   z-index: 1;
-  left: 0;
+  left: 10%;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 50px;
@@ -79,6 +80,12 @@ article {
     text-align: center;   
 }
 
+.main-para {
+    text-align: right;
+    font-size: 1vw;
+    font-family: 'Playfair Display', serif;
+    margin-top: 20%;
+}
 span {
     font-size: 2vw;
     color: darkseagreen;
@@ -88,8 +95,6 @@ section {
     display: flex;
     flex-direction: row-reverse;
 }
-
-
 
 .inline {
     padding-left: 50px;

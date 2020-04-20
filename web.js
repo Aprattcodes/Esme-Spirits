@@ -24,7 +24,7 @@ function myFunction(x) {
 }
 
 function openNav() {
-  document.getElementById("menu").style.width = "250px";
+  document.getElementById("menu").style.width = "500px";
 }
 
 function closeNav() {
@@ -33,9 +33,9 @@ function closeNav() {
 
 function toggleNav() {
   var element = document.getElementById("menu");
-  if (element.style.width == "250px") {
+  if (element.style.width == "500px") {
       element.style.width = "0px";
   } else {
-      element.style.width = "250px";
+      element.style.width = "500px";
   }
 }
