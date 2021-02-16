@@ -20,9 +20,9 @@
 
 <div class="main">
     <div class="logo-container">
-        <img src="esmelogodrawing.png" alt="logo" class="logo">
+        <img src="images\esmelogodrawing.png" alt="logo" class="logo">
     </div>
-    <div class="container" onclick="myFunction(this);toggleNav();">
+    <div class="container" onclick="toggleBar(this);toggleNav();">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
@@ -49,9 +49,9 @@
     <div id="bottles" class="imgcontainer">
     
        <div>
-           <img id='blackLabel' src="Esme_BlackShield_sized.png" alt="black label" class="black inline">
-           <img id="blueLabel" src="Esme_Vodka_sized.png" alt="vodka blue" class="blue inline">
-           <img id='ginLabel' src="Esme_Gin_sized.png" alt="gin" class="gin inline">
+           <img id='blackLabel' src="images\Esme_BlackShield_sized.png" alt="black label" class="black inline">
+           <img id="blueLabel" src="images\Esme_Vodka_sized.png" alt="vodka blue" class="blue inline">
+           <img id='ginLabel' src="images\Esme_Gin_sized.png" alt="gin" class="gin inline">
        </div> 
 
     </div>
@@ -75,27 +75,50 @@
     </p>
     <h3>Scroll for recipes.</h3>
 </article>
+
 <div id="down" class='video-container'>
 
     <video id='glass' autoplay loop muted>
-        <source src="C:\Users\alyss\Pictures\WebDesign\pouring drink.mp4" type="video/mp4">
+        <source src="images\pouring drink.mp4" type="video/mp4">
     </video>
 
 </div>
 
-<div>
-    <h1>Garden to Glass</h1>
-    <h1>Dirty Blue Martini</h1>
-    <h1>Lemon Luster</h1>
-</div>
-<div id='recipe1'>
-
-</div>
-<div id='recipe2'>
-    
-</div>
-<div id='recipe3'>
-    
+<div class="menu-box">
+    <div class="recipe">
+        <h1>Garden Spritz</h1>
+        <img class="bar-img" src="images\garden-spritz.jpg">
+            <ul>
+                <li> 1.5oz Esme's Gin</li>
+                <li> .5oz of fresh lemon juice</li>
+                <li> .5oz simple syrup</li>
+                <li> Top with soda water</li>
+                <li> & fresh mint leaves</li>
+            </ul>
+    </div>
+    <div class="recipe">
+        <h1>Dirty Blue</h1>
+        <img class="bar-img" src="images\dirty-blue.jpg">
+        <ul>
+            <li>Swish a splash of vermouth in martini glass</li>
+            <li>3oz Esme's Blue Label Vodka</li>
+            <li>1oz of fresh olive juice</li>
+            <li>SHAKE IT</li>
+            <li>Finish with blue cheese olives</li>
+        </ul>
+    </div>
+    <div class="recipe">
+        <h1>MeLemoncholy</h1>
+        <img class="bar-img" src="images\melemoncholly.jpg">
+        <ul>
+            <li></li>
+            <li>3oz Esme's Black Label Vodka</li>
+            <li>1oz of fresh lemon juice</li>
+            <li>.5oz simple syrup</li>
+            <li>Finish with splash of soda</li>
+            <li>&  carmelized lemon moon</li>
+        </ul>
+    </div>
 </div>
 
 

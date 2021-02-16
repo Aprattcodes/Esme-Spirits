@@ -49,17 +49,27 @@ body {
     transform: rotate(45deg) translate(-8px, -8px);
   }
 
-.sidebar {
-  height: 100%;
-  width: 500px;
+#menu {
+  display: none;
+  height: auto;
+  width: 300px;
   position: relative;
   background-color: #cfe3cf;
-  z-index: 1;
   left: 10%;
-  overflow-x: hidden;
-  transition: 0.5s;
   padding-top: 50px;
+  animation-name: ease;
+  animation-duration: 0.7s;
 }
+
+@keyframes ease {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
 
 .sidebar a {
   padding: 8px 8px 8px 32px;
@@ -143,17 +153,6 @@ section {
     
 } 
 
-#overlay {
-    position: absolute;
-    display: none;
-    width: 500px;
-    height: 500px;
-    padding-left: 25%;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 2;
-    cursor: pointer;
-  }
-  
 #text{
     position: absolute;
     top: 50%;
@@ -163,3 +162,30 @@ section {
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
   }
+
+ul {
+  list-style-type: none;
+}
+
+.bar-img {
+  border-radius: 20px;
+  width: 200px;
+}
+
+.recipe {
+  background-image: url('https://i.pinimg.com/originals/ff/30/ee/ff30ee6fd3f6ba84ffe4a1becd877820.jpg');
+  background-repeat: no-repeat;
+    width: 400px;
+    background-size: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 500px;
+}
